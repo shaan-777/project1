@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Founderoo - Startup Funding Made Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Founderoo</div>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How it Works</a></li>
+      <li><a href="#testimonials">Success Stories</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <span id="themeToggle" class="icon-moon" title="Toggle dark mode"></span>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Got an idea  <span class="highlight">GET funded</span></h1>
+    <p>Apply in minutes. Get funded in days. <br>No equity, no hidden fees.</p>
+    <button class="cta">Apply Now</button>
+  </header>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="steps-section">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Apply Online</h3>
+        <p>Fill out our simple application form with your startup details.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Get Reviewed</h3>
+        <p>Our team evaluates your application within 2 business days.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Receive Funds</h3>
+        <p>Selected startups receive instant funding. <br><b>Fee: ₹4999 (refundable if not selected)</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section id="testimonials" class="testimonials-section">
+    <h2>Success Stories</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="avatar">A</div>
+        <div>
+          <strong>Aarav Singh</strong> <span class="role">Founder, FinEdge</span>
+          <div class="stars">★★★★★</div>
+          <p>"Founderoo made fundraising effortless. We got ₹10L in a week!"</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="avatar">S</div>
+        <div>
+          <strong>Sneha Patel</strong> <span class="role">Co-founder, GreenCart</span>
+          <div class="stars">★★★★★</div>
+          <p>"Transparent, fast, and founder-friendly. Highly recommend!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <h2>Ready to Scale Your Startup?</h2>
+    <button class="cta-button">Apply Now</button>
+  </section>
+
+  <!-- Terms & Conditions -->
+  <section class="terms-section">
+    <h2>Terms & Conditions</h2>
+    <ul>
+      <li>Application fee: <b>₹4999</b> (fully refundable if not selected).</li>
+      <li>No equity or hidden charges.</li>
+      <li>Selection based on merit and growth potential.</li>
+      <li>Refunds processed within 5 business days if not selected.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          What is the eligibility criteria?
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-answer">
+          Any Indian startup with a working prototype or MVP can apply.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          How soon will I get the funds?
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-answer">
+          Selected startups receive funds within 3-5 business days of selection.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-question">
+          Is the application fee refundable?
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-answer">
+          Yes, if your startup is not selected, the fee is refunded within 5 business days.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Email us at <a href="mailto:hello@founderoo.in">hello@founderoo.in</a></p>
+  </section>
+
+  <!-- Modal Application Form -->
+  <div id="startupModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Startup Application</h2>
+      <form id="startupForm">
+        <label>Founder Name</label>
+        <input type="text" required>
+        <label>Email</label>
+        <input type="email" required>
+        <label>Startup Name</label>
+        <input type="text" required>
+        <label>Website (if any)</label>
+        <input type="url">
+        <label>Describe Your Startup</label>
+        <textarea required></textarea>
+        <label>How much funding do you need?</label>
+        <input type="number" min="10000" step="1000" required>
+        <button type="submit">Submit & Pay ₹4999</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Founderoo</div>
+      <div class="footer-links">
+        <a href="#how-it-works">How it Works</a>
+        <a href="#testimonials">Success Stories</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Terms</a>
+      </div>
+      <div class="footer-contact">
+        <span>Contact: hello@founderoo.in</span>
+        <div class="footer-social">
+          <span class="icon-moon"></span>
+          <span class="icon-moon"></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Founderoo. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
